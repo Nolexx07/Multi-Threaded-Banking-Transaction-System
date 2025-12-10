@@ -2,6 +2,38 @@
 
 A comprehensive Java application that simulates a banking system with concurrent transaction processing, fraud detection, and reporting capabilities.
 
+## 🚀 Quick Start
+
+### Prerequisites
+- Java JDK 17+ (works on 11+, but 17 recommended)
+- Git (to clone)
+- No external libraries required
+
+### Build & Run (Windows PowerShell)
+```powershell
+cd "C:\Users\nolex\Downloads\Banking application"
+javac -d . backend\util\*.java backend\accounts\*.java backend\transactions\*.java backend\concurrency\*.java backend\fraud\*.java backend\atm\*.java backend\reporting\*.java backend\notification\*.java frontend\BankingGUI.java BankingSystemApp.java
+java -cp . frontend.BankingGUI   # GUI
+# or
+java -cp . BankingSystemApp     # Console simulation
+```
+
+### Build & Run (Linux/Mac)
+```bash
+cd "C:/Users/nolex/Downloads/Banking application"   # adjust path as needed
+javac -d . backend/util/*.java backend/accounts/*.java backend/transactions/*.java backend/concurrency/*.java backend/fraud/*.java backend/atm/*.java backend/reporting/*.java backend/notification/*.java frontend/BankingGUI.java BankingSystemApp.java
+java -cp . frontend.BankingGUI   # GUI
+# or
+java -cp . BankingSystemApp     # Console simulation
+```
+
+### Useful Buttons in GUI
+- Parallel Test: fires 5 concurrent transactions (thread-pool/Future demo)
+- Fraud Test: triggers rapid + high-value withdrawals + failed PINs
+- Export Logs (PDF): writes `logs/logs_export.pdf`
+- Export Docs (PDF): writes `logs/docs_export.pdf`
+- Admin report: `logs/admin_report.pdf` from admin dashboard
+
 ## 🎯 Features
 
 - **Account Management**: Support for multiple account types (Savings, Salary)
@@ -189,11 +221,27 @@ This is an educational project for learning Java concurrency and banking system 
 
 ## 👥 Team Structure (5 Members)
 
-1. **Accounts Module**: Account, SavingsAccount, SalaryAccount, AccountRepository
-2. **ATM Simulator**: ATMService, ATMRequest
-3. **Transaction Processor**: Transaction, TransactionProcessor, TransactionResult
-4. **Fraud Detection**: FraudMonitor, FraudAlert
-5. **Reporting Module**: ReportGenerator
+Each team includes a React member (shared where needed) plus back-end developers:
+
+- **Team 1 — Accounts Module**  
+  - React: Gowrish (vishwanadhulagowrish27@gmail.com)  
+  - Devs: Yaswanth Koduru, Lakshmi Narayana Murthy Pappula
+
+- **Team 2 — ATM Simulator**  
+  - React: Indla Lilif Naidu (liliflilif21@gmail.com)  
+  - Devs: Harsha Vardhan Reddy Kommuru, Mabhunni Pathan
+
+- **Team 3 — Transaction Processor**  
+  - React: Adduri Venkatachalam (avenkatachalam6789@gmail.com)  
+  - Devs: Malkam Sathvik, Raviteja Pulluru
+
+- **Team 4 — Fraud Detection**  
+  - React: Gowrish (shared)  
+  - Devs: Munaganti Jyothi, R A Bhargav
+
+- **Team 5 — Reporting Module**  
+  - React: Indla Lilif Naidu (shared)  
+  - Devs: Reddi Pradeep Kumar, (bench/assist: spare slot)
 
 ---
 
