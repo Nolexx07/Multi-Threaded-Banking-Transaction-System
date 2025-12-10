@@ -1,0 +1,642 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 22473 >>
+stream
+BT /F1 12 Tf 50 750 Td (Banking System Logs) Tj
+T* () Tj
+T* (=== README.md ===) Tj
+T* (# Multi-Threaded Banking Transaction System) Tj
+T* () Tj
+T* (A comprehensive Java application that simulates a banking system with concurrent transaction processing, fraud detection, and reporting capabilities.) Tj
+T* () Tj
+T* (## 🎯 Features) Tj
+T* () Tj
+T* (- **Account Management**: Support for multiple account types \(Savings, Salary\)) Tj
+T* (- **GUI Frontend**: Modern Swing-based desktop application with user-friendly interface) Tj
+T* (- **ATM Simulation**: Text-based ATM interface with concurrent transaction processing) Tj
+T* (- **Thread-Safe Operations**: Uses synchronized blocks and ReentrantLock for safe concurrent access) Tj
+T* (- **Fraud Detection**: Monitors suspicious activities \(rapid withdrawals, high-value transactions, failed PIN attempts\)) Tj
+T* (- **Transaction Logging**: Comprehensive logging of all ATM events and transactions) Tj
+T* (- **Reporting System**: Generates daily summary reports with statistics) Tj
+T* () Tj
+T* (## 🏗️ Architecture) Tj
+T* () Tj
+T* (### Package Structure) Tj
+T* () Tj
+T* (```) Tj
+T* (backend/) Tj
+T* (├── accounts/          # Account management) Tj
+T* (│   ├── Account.java) Tj
+T* (│   ├── SavingsAccount.java) Tj
+T* (│   ├── SalaryAccount.java) Tj
+T* (│   └── AccountRepository.java) Tj
+T* (├── atm/               # ATM simulation) Tj
+T* (│   ├── ATMService.java) Tj
+T* (│   └── ATMRequest.java) Tj
+T* (├── transactions/      # Transaction processing) Tj
+T* (│   ├── Transaction.java) Tj
+T* (│   ├── TransactionType.java) Tj
+T* (│   ├── TransactionProcessor.java) Tj
+T* (│   └── TransactionResult.java) Tj
+T* (├── concurrency/       # Concurrency utilities) Tj
+T* (│   ├── LockManager.java) Tj
+T* (│   └── SyncUtils.java) Tj
+T* (├── fraud/             # Fraud detection) Tj
+T* (│   ├── FraudMonitor.java) Tj
+T* (│   └── FraudAlert.java) Tj
+T* (├── reporting/         # Report generation) Tj
+T* (│   └── ReportGenerator.java) Tj
+T* (└── util/              # Utilities) Tj
+T* (    └── DateTimeUtil.java) Tj
+T* (frontend/) Tj
+T* (└── BankingGUI.java    # Swing GUI application) Tj
+T* (```) Tj
+T* () Tj
+T* (## 🔧 Technologies Used) Tj
+T* () Tj
+T* (- **Core Java SE** \(No external frameworks\)) Tj
+T* (- **Multithreading**: ExecutorService, Callable, Future) Tj
+T* (- **Synchronization**: synchronized, ReentrantLock) Tj
+T* (- **Atomic Operations**: AtomicInteger) Tj
+T* (- **Collections**: ConcurrentHashMap, HashMap) Tj
+T* (- **File I/O**: Logging and report generation) Tj
+T* () Tj
+T* (## 🚀 Getting Started) Tj
+T* () Tj
+T* (### Prerequisites) Tj
+T* () Tj
+T* (- Java JDK 8 or higher) Tj
+T* (- No external dependencies required) Tj
+T* () Tj
+T* (### Compilation) Tj
+T* () Tj
+T* (```bash) Tj
+T* (# Compile all Java files) Tj
+T* (javac -d . backend/**/*.java BankingSystemApp.java) Tj
+T* () Tj
+T* (# Or compile individually) Tj
+T* (javac backend/util/DateTimeUtil.java) Tj
+T* (javac backend/accounts/*.java) Tj
+T* (javac backend/transactions/*.java) Tj
+T* (javac backend/concurrency/*.java) Tj
+T* (javac backend/fraud/*.java) Tj
+T* (javac backend/atm/*.java) Tj
+T* (javac backend/reporting/*.java) Tj
+T* (javac BankingSystemApp.java) Tj
+T* (```) Tj
+T* () Tj
+T* (### Execution) Tj
+T* () Tj
+T* (**Option 1: Run GUI Application \(Recommended\)**) Tj
+T* (```bash) Tj
+T* (# Windows) Tj
+T* (run-gui.bat) Tj
+T* () Tj
+T* (# Linux/Mac) Tj
+T* (chmod +x run-gui.sh) Tj
+T* (./run-gui.sh) Tj
+T* () Tj
+T* (# Or manually:) Tj
+T* (javac -d . backend\util\*.java backend\accounts\*.java backend\transactions\*.java backend\concurrency\*.java backend\fraud\*.java backend\atm\*.java backend\reporting\*.java frontend\BankingGUI.java) Tj
+T* (java frontend.BankingGUI) Tj
+T* (```) Tj
+T* () Tj
+T* (**Option 2: Run Console Application**) Tj
+T* (```bash) Tj
+T* (# Run the console-based application) Tj
+T* (java BankingSystemApp) Tj
+T* (```) Tj
+T* () Tj
+T* (### Create Logs Directory) Tj
+T* () Tj
+T* (The application will create a `logs/` directory automatically, but you can create it manually:) Tj
+T* () Tj
+T* (```bash) Tj
+T* (mkdir logs) Tj
+T* (```) Tj
+T* () Tj
+T* (## 📋 Concurrency Rules) Tj
+T* () Tj
+T* (1. **Single Account Operations**: Uses `synchronized\(account\)` for thread-safe deposit/withdraw) Tj
+T* (2. **Transfer Operations**: Uses `ReentrantLock` with deadlock prevention \(locks accounts in ascending ID order\)) Tj
+T* (3. **Thread Pool**: ExecutorService with fixed pool size of 10 threads) Tj
+T* (4. **Atomic Counters**: Uses AtomicInteger for fraud metrics and transaction counts) Tj
+T* () Tj
+T* (## 📊 Sample Output) Tj
+T* () Tj
+T* (The application will:) Tj
+T* (1. Initialize accounts) Tj
+T* (2. Process concurrent transactions from multiple ATMs) Tj
+T* (3. Detect fraud patterns) Tj
+T* (4. Generate logs in `logs/` directory:) Tj
+T* (   - `atm.log` - All ATM events) Tj
+T* (   - `transactions.log` - All transaction details) Tj
+T* (   - `fraud_report.txt` - Fraud alerts) Tj
+T* (   - `daily_report.txt` - Daily summary report) Tj
+T* () Tj
+T* (## 🔍 Key Classes) Tj
+T* () Tj
+T* (### Account) Tj
+T* (- Base class for all account types) Tj
+T* (- Thread-safe deposit/withdraw operations) Tj
+T* (- PIN validation) Tj
+T* (- Transaction counting) Tj
+T* () Tj
+T* (### TransactionProcessor) Tj
+T* (- Core engine for processing transactions) Tj
+T* (- Uses ExecutorService for parallel processing) Tj
+T* (- Implements synchronized and ReentrantLock patterns) Tj
+T* (- Prevents overdrafts) Tj
+T* () Tj
+T* (### FraudMonitor) Tj
+T* (- Background monitoring thread) Tj
+T* (- Detects:) Tj
+T* (  - Rapid withdrawals \(3+ in 1 minute\)) Tj
+T* (  - High-value withdrawals \(>$5000\)) Tj
+T* (  - Failed PIN attempts \(3+ failures\)) Tj
+T* () Tj
+T* (### ReportGenerator) Tj
+T* (- Parses transaction logs) Tj
+T* (- Generates CSV/TXT reports) Tj
+T* (- Includes statistics and summaries) Tj
+T* () Tj
+T* (## 🧪 Testing) Tj
+T* () Tj
+T* (The application includes sample test scenarios:) Tj
+T* (- Concurrent withdrawals and deposits) Tj
+T* (- Money transfers between accounts) Tj
+T* (- Balance inquiries) Tj
+T* (- Fraud detection triggers \(rapid withdrawals, high-value transactions, failed PINs\)) Tj
+T* () Tj
+T* (## 📝 Log Files) Tj
+T* () Tj
+T* (All logs are written to the `logs/` directory:) Tj
+T* () Tj
+T* (- **atm.log**: ATM events and user activities) Tj
+T* (- **transactions.log**: Detailed transaction records with results) Tj
+T* (- **fraud_report.txt**: Fraud alerts and suspicious activities) Tj
+T* (- **daily_report.txt**: Daily summary with statistics) Tj
+T* () Tj
+T* (## 🎓 Learning Objectives) Tj
+T* () Tj
+T* (This project demonstrates:) Tj
+T* (- Object-Oriented Programming \(Encapsulation, Inheritance, Polymorphism\)) Tj
+T* (- Exception Handling) Tj
+T* (- Collections Framework) Tj
+T* (- Generics) Tj
+T* (- Multithreading and Concurrency) Tj
+T* (- Thread Synchronization) Tj
+T* (- Deadlock Prevention) Tj
+T* (- File I/O) Tj
+T* (- Logging Systems) Tj
+T* () Tj
+T* (## 📄 License) Tj
+T* () Tj
+T* (This is an educational project for learning Java concurrency and banking system simulation.) Tj
+T* () Tj
+T* (## 👥 Team Structure \(5 Members\)) Tj
+T* () Tj
+T* (1. **Accounts Module**: Account, SavingsAccount, SalaryAccount, AccountRepository) Tj
+T* (2. **ATM Simulator**: ATMService, ATMRequest) Tj
+T* (3. **Transaction Processor**: Transaction, TransactionProcessor, TransactionResult) Tj
+T* (4. **Fraud Detection**: FraudMonitor, FraudAlert) Tj
+T* (5. **Reporting Module**: ReportGenerator) Tj
+T* () Tj
+T* (---) Tj
+T* () Tj
+T* (**Note**: This is a simulation system for educational purposes. It does not connect to real banking systems or handle real money.) Tj
+T* () Tj
+T* () Tj
+T* () Tj
+T* (=== PROJECT_SUMMARY.md ===) Tj
+T* (# Project Summary - Multi-Threaded Banking Transaction System) Tj
+T* () Tj
+T* (## ✅ Project Status: COMPLETE) Tj
+T* () Tj
+T* (All modules have been successfully implemented according to the master prompt specifications.) Tj
+T* () Tj
+T* (## 📦 Deliverables) Tj
+T* () Tj
+T* (### ✅ Complete Backend Code) Tj
+T* (- **Account Module**: Account, SavingsAccount, SalaryAccount, AccountRepository) Tj
+T* (- **ATM Simulator**: ATMService, ATMRequest) Tj
+T* (- **Transaction Processor**: Transaction, TransactionType, TransactionResult, TransactionProcessor) Tj
+T* (- **Concurrency Layer**: LockManager, SyncUtils) Tj
+T* (- **Fraud Detection**: FraudMonitor, FraudAlert) Tj
+T* (- **Reporting**: ReportGenerator) Tj
+T* (- **Utilities**: DateTimeUtil) Tj
+T* (- **Main Application**: BankingSystemApp) Tj
+T* () Tj
+T* (### ✅ Documentation) Tj
+T* (- README.md - Complete project documentation) Tj
+T* (- docs/architecture.md - Architecture details) Tj
+T* (- docs/uml-diagrams.md - UML diagrams \(Class, Sequence, State, Component, Activity\)) Tj
+T* (- COMPILE_AND_RUN.md - Compilation and execution guide) Tj
+T* (- PROJECT_SUMMARY.md - This file) Tj
+T* () Tj
+T* (### ✅ File Structure) Tj
+T* (```) Tj
+T* (Banking application/) Tj
+T* (├── backend/) Tj
+T* (│   ├── accounts/) Tj
+T* (│   │   ├── Account.java) Tj
+T* (│   │   ├── SavingsAccount.java) Tj
+T* (│   │   ├── SalaryAccount.java) Tj
+T* (│   │   └── AccountRepository.java) Tj
+T* (│   ├── atm/) Tj
+T* (│   │   ├── ATMService.java) Tj
+T* (│   │   └── ATMRequest.java) Tj
+T* (│   ├── transactions/) Tj
+T* (│   │   ├── Transaction.java) Tj
+T* (│   │   ├── TransactionType.java) Tj
+T* (│   │   ├── TransactionProcessor.java) Tj
+T* (│   │   └── TransactionResult.java) Tj
+T* (│   ├── concurrency/) Tj
+T* (│   │   ├── LockManager.java) Tj
+T* (│   │   └── SyncUtils.java) Tj
+T* (│   ├── fraud/) Tj
+T* (│   │   ├── FraudMonitor.java) Tj
+T* (│   │   └── FraudAlert.java) Tj
+T* (│   ├── reporting/) Tj
+T* (│   │   └── ReportGenerator.java) Tj
+T* (│   └── util/) Tj
+T* (│       └── DateTimeUtil.java) Tj
+T* (├── logs/                    # Created automatically) Tj
+T* (│   ├── atm.log) Tj
+T* (│   ├── transactions.log) Tj
+T* (│   ├── fraud_report.txt) Tj
+T* (│   └── daily_report.txt) Tj
+T* (├── docs/) Tj
+T* (│   ├── architecture.md) Tj
+T* (│   └── uml-diagrams.md) Tj
+T* (├── BankingSystemApp.java) Tj
+T* (├── README.md) Tj
+T* (├── COMPILE_AND_RUN.md) Tj
+T* (├── PROJECT_SUMMARY.md) Tj
+T* (└── .gitignore) Tj
+T* (```) Tj
+T* () Tj
+T* (## 🎯 Features Implemented) Tj
+T* () Tj
+T* (### ✅ Account Management) Tj
+T* (- [x] Account base class with thread-safe operations) Tj
+T* (- [x] SavingsAccount with minimum balance requirement) Tj
+T* (- [x] SalaryAccount without minimum balance requirement) Tj
+T* (- [x] AccountRepository using ConcurrentHashMap) Tj
+T* (- [x] PIN validation with failure tracking) Tj
+T* (- [x] Transaction counting) Tj
+T* () Tj
+T* (### ✅ ATM Simulation) Tj
+T* (- [x] ATMService for processing requests) Tj
+T* (- [x] ATMRequest wrapper class) Tj
+T* (- [x] Support for multiple concurrent ATMs) Tj
+T* (- [x] Event logging) Tj
+T* () Tj
+T* (### ✅ Transaction Processing) Tj
+T* (- [x] Withdraw operation \(synchronized\)) Tj
+T* (- [x] Deposit operation \(synchronized\)) Tj
+T* (- [x] Transfer operation \(ReentrantLock with deadlock prevention\)) Tj
+T* (- [x] Balance inquiry \(synchronized\)) Tj
+T* (- [x] ExecutorService with fixed thread pool \(10 threads\)) Tj
+T* (- [x] Callable + Future pattern) Tj
+T* (- [x] Overdraft prevention) Tj
+T* () Tj
+T* (### ✅ Concurrency Layer) Tj
+T* (- [x] LockManager for ReentrantLock management) Tj
+T* (- [x] Deadlock prevention \(locking accounts in ascending order\)) Tj
+T* (- [x] SyncUtils for thread utilities) Tj
+T* (- [x] Synchronized blocks for single-account operations) Tj
+T* () Tj
+T* (### ✅ Fraud Detection) Tj
+T* (- [x] Rapid withdrawal detection \(3+ in 60 seconds\)) Tj
+T* (- [x] High-value withdrawal detection \(>$5000\)) Tj
+T* (- [x] Failed PIN attempt tracking \(3+ failures\)) Tj
+T* (- [x] AtomicInteger for thread-safe counters) Tj
+T* (- [x] Real-time alert generation) Tj
+T* (- [x] Fraud report file generation) Tj
+T* () Tj
+T* (### ✅ Logging & Reporting) Tj
+T* (- [x] ATM event logging \(atm.log\)) Tj
+T* (- [x] Transaction logging \(transactions.log\)) Tj
+T* (- [x] Fraud alert logging \(fraud_report.txt\)) Tj
+T* (- [x] Daily report generation \(daily_report.txt\)) Tj
+T* (- [x] Statistics and summaries) Tj
+T* () Tj
+T* (## 🔧 Technologies Used) Tj
+T* () Tj
+T* (- ✅ Core Java SE \(no frameworks\)) Tj
+T* (- ✅ OOPS \(Encapsulation, Inheritance, Polymorphism, Abstraction\)) Tj
+T* (- ✅ Exception Handling) Tj
+T* (- ✅ Collections \(HashMap, ConcurrentHashMap, ArrayList\)) Tj
+T* (- ✅ Generics) Tj
+T* (- ✅ Multithreading \(ExecutorService, Callable, Future\)) Tj
+T* (- ✅ Synchronization \(synchronized, ReentrantLock\)) Tj
+T* (- ✅ AtomicInteger) Tj
+T* (- ✅ File I/O) Tj
+T* (- ✅ DateTime API) Tj
+T* () Tj
+T* (## 📊 Concurrency Implementation) Tj
+T* () Tj
+T* (### Single Account Operations) Tj
+T* (- Uses `synchronized\(account\)` blocks) Tj
+T* (- Thread-safe deposit/withdraw/balance inquiry) Tj
+T* () Tj
+T* (### Transfer Operations) Tj
+T* (- Uses `ReentrantLock` for both accounts) Tj
+T* (- Locks acquired in ascending account ID order) Tj
+T* (- Prevents deadlocks) Tj
+T* () Tj
+T* (### Thread Pool) Tj
+T* (- Fixed thread pool size: 10 threads) Tj
+T* (- Uses ExecutorService) Tj
+T* (- Returns Future<TransactionResult> for async processing) Tj
+T* () Tj
+T* (## 🧪 Test Scenarios Included) Tj
+T* () Tj
+T* (The main application includes:) Tj
+T* (1. ✅ Concurrent withdrawals and deposits) Tj
+T* (2. ✅ Money transfers between accounts) Tj
+T* (3. ✅ Balance inquiries) Tj
+T* (4. ✅ Rapid withdrawals \(fraud detection test\)) Tj
+T* (5. ✅ High-value withdrawals \(fraud detection test\)) Tj
+T* (6. ✅ Failed PIN attempts \(fraud detection test\)) Tj
+T* () Tj
+T* (## 📝 Code Quality) Tj
+T* () Tj
+T* (- ✅ Clean, production-grade Java code) Tj
+T* (- ✅ Proper package structure) Tj
+T* (- ✅ Comprehensive comments) Tj
+T* (- ✅ Error handling) Tj
+T* (- ✅ Thread safety throughout) Tj
+T* (- ✅ No linter errors) Tj
+T* () Tj
+T* (## 🚀 Ready to Run) Tj
+T* () Tj
+T* (The project is complete and ready to compile and run. Follow the instructions in `COMPILE_AND_RUN.md` to execute the application.) Tj
+T* () Tj
+T* (## 📚 Documentation Quality) Tj
+T* () Tj
+T* (- ✅ Complete README with features and usage) Tj
+T* (- ✅ Architecture documentation) Tj
+T* (- ✅ UML diagrams \(text/ASCII format\)) Tj
+T* (- ✅ Compilation guide) Tj
+T* (- ✅ Code comments and JavaDoc-style documentation) Tj
+T* () Tj
+T* (---) Tj
+T* () Tj
+T* (**Status**: All requirements from the master prompt have been successfully implemented! 🎉) Tj
+T* () Tj
+T* () Tj
+T* () Tj
+T* (=== GUI_FEATURES.md ===) Tj
+T* (# GUI Frontend Features) Tj
+T* () Tj
+T* (## Overview) Tj
+T* () Tj
+T* (A modern, user-friendly Swing-based desktop application that provides a graphical interface for the Multi-Threaded Banking Transaction System.) Tj
+T* () Tj
+T* (## Features) Tj
+T* () Tj
+T* (### 🔐 Login Screen) Tj
+T* (- Clean, professional login interface) Tj
+T* (- Account ID and PIN input fields) Tj
+T* (- Sample account information displayed) Tj
+T* (- Enter key support for quick login) Tj
+T* (- Error handling for invalid credentials) Tj
+T* () Tj
+T* (### 📊 Dashboard) Tj
+T* (- **Account Information Display**) Tj
+T* (  - Account ID and name) Tj
+T* (  - Real-time balance display) Tj
+T* (  - Auto-refresh after transactions) Tj
+T* () Tj
+T* (- **Transaction Buttons**) Tj
+T* (  - **Withdraw**: Withdraw money with amount input dialog) Tj
+T* (  - **Deposit**: Deposit money with amount input dialog) Tj
+T* (  - **Transfer**: Transfer money with target account and amount input) Tj
+T* (  - **Check Balance**: Instant balance inquiry) Tj
+T* () Tj
+T* (- **Transaction Log Panel**) Tj
+T* (  - Real-time transaction logging) Tj
+T* (  - Timestamp for each transaction) Tj
+T* (  - Success/failure indicators \(✓/✗\)) Tj
+T* (  - Scrollable history) Tj
+T* () Tj
+T* (- **Fraud Alerts Panel**) Tj
+T* (  - Real-time fraud alert display) Tj
+T* (  - Alert count indicator) Tj
+T* (  - Information about detected fraud types) Tj
+T* () Tj
+T* (### 🎨 User Interface Design) Tj
+T* (- Modern color scheme \(blue theme\)) Tj
+T* (- Responsive layout) Tj
+T* (- Clear visual hierarchy) Tj
+T* (- Intuitive button placement) Tj
+T* (- Professional styling) Tj
+T* () Tj
+T* (### ⚡ Technical Features) Tj
+T* (- **Asynchronous Processing**: All transactions processed in background threads) Tj
+T* (- **Thread-Safe**: Fully integrated with backend thread-safe operations) Tj
+T* (- **Real-Time Updates**: Balance and logs update immediately after transactions) Tj
+T* (- **Error Handling**: User-friendly error messages) Tj
+T* (- **Logging Integration**: All transactions logged to backend log files) Tj
+T* () Tj
+T* (## Sample Accounts) Tj
+T* () Tj
+T* (The system comes pre-loaded with 5 sample accounts:) Tj
+T* () Tj
+T* (| Account ID | Name | PIN | Type | Initial Balance |) Tj
+T* (|------------|------|-----|------|-----------------|) Tj
+T* (| 1001 | Alice Johnson | 1234 | Savings | $5,000.00 |) Tj
+T* (| 1002 | Bob Smith | 5678 | Savings | $3,000.00 |) Tj
+T* (| 1003 | Charlie Brown | 9012 | Savings | $7,500.00 |) Tj
+T* (| 2001 | Diana Prince | 3456 | Salary | $2,000.00 |) Tj
+T* (| 2002 | Edward Norton | 7890 | Salary | $4,500.00 |) Tj
+T* () Tj
+T* (## Usage Flow) Tj
+T* () Tj
+T* (1. **Launch Application**: Run `java frontend.BankingGUI` or use `run-gui.bat`) Tj
+T* (2. **Login**: Enter account ID and PIN) Tj
+T* (3. **View Dashboard**: See account info and balance) Tj
+T* (4. **Perform Transactions**: Use buttons for withdraw, deposit, transfer, or balance check) Tj
+T* (5. **Monitor Activity**: Watch transaction log and fraud alerts) Tj
+T* (6. **Logout**: Return to login screen) Tj
+T* () Tj
+T* (## Integration with Backend) Tj
+T* () Tj
+T* (The GUI seamlessly integrates with all backend components:) Tj
+T* () Tj
+T* (- ✅ **AccountRepository**: Account management) Tj
+T* (- ✅ **TransactionProcessor**: Thread-safe transaction processing) Tj
+T* (- ✅ **ATMService**: ATM request handling) Tj
+T* (- ✅ **FraudMonitor**: Real-time fraud detection) Tj
+T* (- ✅ **ReportGenerator**: Report generation \(can be triggered\)) Tj
+T* () Tj
+T* (## Thread Safety) Tj
+T* () Tj
+T* (All GUI operations are properly synchronized:) Tj
+T* (- Transactions processed via ExecutorService) Tj
+T* (- UI updates on Swing event thread) Tj
+T* (- No race conditions) Tj
+T* (- Thread-safe backend operations) Tj
+T* () Tj
+T* (## Error Handling) Tj
+T* () Tj
+T* (- Invalid account ID/PIN) Tj
+T* (- Insufficient funds) Tj
+T* (- Invalid amounts) Tj
+T* (- Network/processing errors) Tj
+T* (- User-friendly error dialogs) Tj
+T* () Tj
+T* (## Future Enhancements \(Optional\)) Tj
+T* () Tj
+T* (- Transaction history view) Tj
+T* (- Account statement generation) Tj
+T* (- Multiple account switching) Tj
+T* (- Settings panel) Tj
+T* (- Report viewer) Tj
+T* (- Export functionality) Tj
+T* () Tj
+T* () Tj
+T* () Tj
+T* (=== COMPILE_AND_RUN.md ===) Tj
+T* (# Compilation and Execution Guide) Tj
+T* () Tj
+T* (## Quick Start) Tj
+T* () Tj
+T* (### Step 1: Compile the Project) Tj
+T* () Tj
+T* (Navigate to the project root directory and compile all Java files:) Tj
+T* () Tj
+T* (**Windows \(PowerShell\):**) Tj
+T* (```powershell) Tj
+T* (cd "C:\Users\nolex\Downloads\Banking application") Tj
+T* (javac -d . backend\util\*.java backend\accounts\*.java backend\transactions\*.java backend\concurrency\*.java backend\fraud\*.java backend\atm\*.java backend\reporting\*.java BankingSystemApp.java) Tj
+T* (```) Tj
+T* () Tj
+T* (**Windows \(Command Prompt\):**) Tj
+T* (```cmd) Tj
+T* (cd "C:\Users\nolex\Downloads\Banking application") Tj
+T* (javac -d . backend\util\*.java backend\accounts\*.java backend\transactions\*.java backend\concurrency\*.java backend\fraud\*.java backend\atm\*.java backend\reporting\*.java BankingSystemApp.java) Tj
+T* (```) Tj
+T* () Tj
+T* (**Linux/Mac:**) Tj
+T* (```bash) Tj
+T* (javac -d . backend/util/*.java backend/accounts/*.java backend/transactions/*.java backend/concurrency/*.java backend/fraud/*.java backend/atm/*.java backend/reporting/*.java BankingSystemApp.java) Tj
+T* (```) Tj
+T* () Tj
+T* (### Step 2: Create Logs Directory) Tj
+T* () Tj
+T* (The application will create the logs directory automatically, but you can create it manually:) Tj
+T* () Tj
+T* (**Windows:**) Tj
+T* (```powershell) Tj
+T* (mkdir logs) Tj
+T* (```) Tj
+T* () Tj
+T* (**Linux/Mac:**) Tj
+T* (```bash) Tj
+T* (mkdir -p logs) Tj
+T* (```) Tj
+T* () Tj
+T* (### Step 3: Run the Application) Tj
+T* () Tj
+T* (```bash) Tj
+T* (java BankingSystemApp) Tj
+T* (```) Tj
+T* () Tj
+T* (## Alternative: Compile Individual Packages) Tj
+T* () Tj
+T* (If the above doesn't work, compile in order:) Tj
+T* () Tj
+T* (```bash) Tj
+T* (# 1. Utilities) Tj
+T* (javac backend/util/DateTimeUtil.java) Tj
+T* () Tj
+T* (# 2. Accounts) Tj
+T* (javac backend/accounts/Account.java) Tj
+T* (javac backend/accounts/SavingsAccount.java) Tj
+T* (javac backend/accounts/SalaryAccount.java) Tj
+T* (javac backend/accounts/AccountRepository.java) Tj
+T* () Tj
+T* (# 3. Transactions) Tj
+T* (javac backend/transactions/TransactionType.java) Tj
+T* (javac backend/transactions/Transaction.java) Tj
+T* (javac backend/transactions/TransactionResult.java) Tj
+T* (javac backend/transactions/TransactionProcessor.java) Tj
+T* () Tj
+T* (# 4. Concurrency) Tj
+T* (javac backend/concurrency/LockManager.java) Tj
+T* (javac backend/concurrency/SyncUtils.java) Tj
+T* () Tj
+T* (# 5. Fraud Detection) Tj
+T* (javac backend/fraud/FraudAlert.java) Tj
+T* (javac backend/fraud/FraudMonitor.java) Tj
+T* () Tj
+T* (# 6. ATM) Tj
+T* (javac backend/atm/ATMRequest.java) Tj
+T* (javac backend/atm/ATMService.java) Tj
+T* () Tj
+T* (# 7. Reporting) Tj
+T* (javac backend/reporting/ReportGenerator.java) Tj
+T* () Tj
+T* (# 8. Main Application) Tj
+T* (javac BankingSystemApp.java) Tj
+T* (```) Tj
+T* () Tj
+T* (## Expected Output) Tj
+T* () Tj
+T* (After running, you should see:) Tj
+T* (- Console output showing transaction processing) Tj
+T* (- Log files created in `logs/` directory:) Tj
+T* (  - `atm.log` - ATM events) Tj
+T* (  - `transactions.log` - Transaction details) Tj
+T* (  - `fraud_report.txt` - Fraud alerts) Tj
+T* (  - `daily_report.txt` - Daily summary) Tj
+T* () Tj
+T* (## Troubleshooting) Tj
+T* () Tj
+T* (### "Package does not exist" Error) Tj
+T* (Make sure you're compiling from the project root directory and using the correct package structure.) Tj
+T* () Tj
+T* (### "Cannot find symbol" Error) Tj
+T* (Compile dependencies first \(e.g., compile Account before SavingsAccount\).) Tj
+T* () Tj
+T* (### Log Files Not Created) Tj
+T* (Ensure the `logs/` directory exists and has write permissions.) Tj
+T* () Tj
+T* (## Requirements) Tj
+T* () Tj
+T* (- Java JDK 8 or higher) Tj
+T* (- No external dependencies required) Tj
+T* () Tj
+T* () Tj
+T* () Tj
+T* () Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000022767 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+22837
+%%EOF

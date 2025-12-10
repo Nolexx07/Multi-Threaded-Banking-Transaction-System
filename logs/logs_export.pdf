@@ -1,0 +1,172 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 18058 >>
+stream
+BT /F1 12 Tf 50 750 Td (Banking System Logs) Tj
+T* () Tj
+T* (=== logs/atm.log ===) Tj
+T* (================================================================================) Tj
+T* (ATM LOG - Started at 2025-12-10 11:59:39.287) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (ATM LOG - Started at 2025-12-10 12:04:32.104) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:04:47.609 | ATM GUI-ATM: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 12:04:57.922 | ATM GUI-ATM: Customer Alice Johnson initiated DEPOSIT transaction for Account 1001) Tj
+T* (2025-12-10 12:06:13.071 | ATM GUI-ATM: Customer Alice Johnson initiated TRANSFER transaction for Account 1001) Tj
+T* (2025-12-10 12:06:27.603 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 12:18:54.099 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (================================================================================) Tj
+T* (ATM LOG - Started at 2025-12-10 12:20:45.731) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (ATM LOG - Started at 2025-12-10 12:21:08.002) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:23:07.025 | ATM GUI-ATM: Customer Alice Johnson initiated TRANSFER transaction for Account 1001) Tj
+T* (2025-12-10 12:23:12.658 | ATM GUI-ATM: Customer Bob Smith initiated BALANCE_INQUIRY transaction for Account 1002) Tj
+T* (2025-12-10 12:23:54.446 | ATM GUI-ATM: Customer Bob Smith initiated TRANSFER transaction for Account 1002) Tj
+T* (2025-12-10 12:23:59.329 | ATM GUI-ATM: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 12:24:11.665 | ATM GUI-ATM: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 12:24:39.411 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (================================================================================) Tj
+T* (ATM LOG - Started at 2025-12-10 12:38:36.676) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:39:54.847 | ATM GUI-ATM: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 12:40:17.882 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 12:41:04.142 | ATM GUI-ATM: Customer Alice Johnson initiated TRANSFER transaction for Account 1001) Tj
+T* (2025-12-10 12:41:42.703 | ATM GUI-ATM: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 12:42:02.388 | ATM GUI-ATM: Customer Alice Johnson initiated DEPOSIT transaction for Account 1001) Tj
+T* (2025-12-10 12:42:22.501 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 12:42:50.090 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 12:43:24.674 | ATM GUI-ATM: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 12:44:58.252 | ATM GUI-ATM: Customer Bob Smith initiated TRANSFER transaction for Account 1002) Tj
+T* (2025-12-10 12:55:34.355 | ATM GUI-ATM: Customer Charlie Brown initiated WITHDRAW transaction for Account 1003) Tj
+T* (2025-12-10 12:56:02.065 | ATM GUI-ATM: Customer Charlie Brown initiated WITHDRAW transaction for Account 1003) Tj
+T* (2025-12-10 12:56:23.884 | ATM GUI-ATM: Customer Charlie Brown initiated WITHDRAW transaction for Account 1003) Tj
+T* (================================================================================) Tj
+T* (ATM LOG - Started at 2025-12-10 13:12:14.034) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 13:12:44.490 | ATM GUI-PT: Customer Alice Johnson initiated DEPOSIT transaction for Account 1001) Tj
+T* (2025-12-10 13:12:44.493 | ATM GUI-PT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:44.494 | ATM GUI-PT: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 13:12:44.494 | ATM GUI-PT: Customer Alice Johnson initiated DEPOSIT transaction for Account 1001) Tj
+T* (2025-12-10 13:12:44.495 | ATM GUI-PT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:47.817 | ATM GUI-FT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:47.987 | ATM GUI-FT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:48.143 | ATM GUI-FT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:48.299 | ATM GUI-FT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:48.455 | ATM GUI-FT: Customer Alice Johnson initiated WITHDRAW transaction for Account 1001) Tj
+T* (2025-12-10 13:12:48.456 | ATM GUI-FT: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 13:12:48.564 | ATM GUI-FT: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* (2025-12-10 13:12:48.672 | ATM GUI-FT: Customer Alice Johnson initiated BALANCE_INQUIRY transaction for Account 1001) Tj
+T* () Tj
+T* () Tj
+T* (=== logs/transactions.log ===) Tj
+T* (================================================================================) Tj
+T* (TRANSACTION LOG - Started at 2025-12-10 11:59:39.283) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (TRANSACTION LOG - Started at 2025-12-10 12:04:32.101) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:04:47.620 | Transaction[Type=BALANCE_INQUIRY, Account=1001, Amount=0.00, Time=2025-12-10 12:04:47.607] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1001, Balance=5000.00, Message=Balance inquiry: $5000.00, Time=2025-12-10 12:04:47.620]) Tj
+T* (2025-12-10 12:04:57.923 | Transaction[Type=DEPOSIT, Account=1001, Amount=500.00, Time=2025-12-10 12:04:57.921] | TransactionResult[Success=true, Type=DEPOSIT, AccountId=1001, Balance=5500.00, Message=Deposit successful: $500.00, Time=2025-12-10 12:04:57.923]) Tj
+T* (2025-12-10 12:06:13.087 | Transaction[Type=TRANSFER, From=1001, To=1002, Amount=700.00, Time=2025-12-10 12:06:13.070] | TransactionResult[Success=true, Type=TRANSFER, AccountId=1001, Balance=4800.00, Message=Transfer successful: $700.00 from Account 1001 to Account 1002, Time=2025-12-10 12:06:13.087]) Tj
+T* (2025-12-10 12:06:27.604 | Transaction[Type=WITHDRAW, Account=1001, Amount=200.00, Time=2025-12-10 12:06:27.602] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4600.00, Message=Withdrawal successful: $200.00, Time=2025-12-10 12:06:27.604]) Tj
+T* (2025-12-10 12:18:54.104 | Transaction[Type=WITHDRAW, Account=1001, Amount=200.00, Time=2025-12-10 12:18:54.094] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4400.00, Message=Withdrawal successful: $200.00, Time=2025-12-10 12:18:54.104]) Tj
+T* (================================================================================) Tj
+T* (TRANSACTION LOG - Started at 2025-12-10 12:20:45.727) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (TRANSACTION LOG - Started at 2025-12-10 12:21:07.999) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:23:07.040 | Transaction[Type=TRANSFER, From=1001, To=1002, Amount=600.00, Time=2025-12-10 12:23:07.022] | TransactionResult[Success=true, Type=TRANSFER, AccountId=1001, Balance=4400.00, Message=Transfer successful: $600.00 from Account 1001 to Account 1002, Time=2025-12-10 12:23:07.040]) Tj
+T* (2025-12-10 12:23:12.675 | Transaction[Type=BALANCE_INQUIRY, Account=1002, Amount=0.00, Time=2025-12-10 12:23:12.655] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1002, Balance=3000.00, Message=Balance inquiry: $3000.00, Time=2025-12-10 12:23:12.675]) Tj
+T* (2025-12-10 12:23:54.451 | Transaction[Type=TRANSFER, From=1002, To=1001, Amount=100.00, Time=2025-12-10 12:23:54.446] | TransactionResult[Success=true, Type=TRANSFER, AccountId=1002, Balance=2900.00, Message=Transfer successful: $100.00 from Account 1002 to Account 1001, Time=2025-12-10 12:23:54.451]) Tj
+T* (2025-12-10 12:23:59.330 | Transaction[Type=BALANCE_INQUIRY, Account=1001, Amount=0.00, Time=2025-12-10 12:23:59.328] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1001, Balance=4400.00, Message=Balance inquiry: $4400.00, Time=2025-12-10 12:23:59.330]) Tj
+T* (2025-12-10 12:24:11.667 | Transaction[Type=BALANCE_INQUIRY, Account=1001, Amount=0.00, Time=2025-12-10 12:24:11.665] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1001, Balance=4400.00, Message=Balance inquiry: $4400.00, Time=2025-12-10 12:24:11.667]) Tj
+T* (2025-12-10 12:24:39.413 | Transaction[Type=WITHDRAW, Account=1001, Amount=4400.00, Time=2025-12-10 12:24:39.410] | TransactionResult[Success=false, Type=WITHDRAW, AccountId=1001, Balance=4400.00, Message=Withdrawal failed: Insufficient funds or invalid amount, Time=2025-12-10 12:24:39.413]) Tj
+T* (================================================================================) Tj
+T* (TRANSACTION LOG - Started at 2025-12-10 12:38:36.673) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:39:54.858 | Transaction[Type=BALANCE_INQUIRY, Account=1001, Amount=0.00, Time=2025-12-10 12:39:54.841] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1001, Balance=5000.00, Message=Balance inquiry: $5000.00, Time=2025-12-10 12:39:54.858]) Tj
+T* (2025-12-10 12:40:17.883 | Transaction[Type=WITHDRAW, Account=1001, Amount=400.00, Time=2025-12-10 12:40:17.881] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4600.00, Message=Withdrawal successful: $400.00, Time=2025-12-10 12:40:17.883]) Tj
+T* (2025-12-10 12:41:04.147 | Transaction[Type=TRANSFER, From=1001, To=1002, Amount=600.00, Time=2025-12-10 12:41:04.140] | TransactionResult[Success=true, Type=TRANSFER, AccountId=1001, Balance=4000.00, Message=Transfer successful: $600.00 from Account 1001 to Account 1002, Time=2025-12-10 12:41:04.147]) Tj
+T* (2025-12-10 12:41:42.705 | Transaction[Type=BALANCE_INQUIRY, Account=1001, Amount=0.00, Time=2025-12-10 12:41:42.703] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1001, Balance=4000.00, Message=Balance inquiry: $4000.00, Time=2025-12-10 12:41:42.705]) Tj
+T* (2025-12-10 12:42:02.389 | Transaction[Type=DEPOSIT, Account=1001, Amount=700.00, Time=2025-12-10 12:42:02.388] | TransactionResult[Success=true, Type=DEPOSIT, AccountId=1001, Balance=4700.00, Message=Deposit successful: $700.00, Time=2025-12-10 12:42:02.389]) Tj
+T* (2025-12-10 12:42:22.502 | Transaction[Type=WITHDRAW, Account=1001, Amount=4700.00, Time=2025-12-10 12:42:22.500] | TransactionResult[Success=false, Type=WITHDRAW, AccountId=1001, Balance=4700.00, Message=Withdrawal failed: Insufficient funds or invalid amount, Time=2025-12-10 12:42:22.502]) Tj
+T* (2025-12-10 12:42:50.094 | Transaction[Type=WITHDRAW, Account=1001, Amount=4000.00, Time=2025-12-10 12:42:50.089] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=700.00, Message=Withdrawal successful: $4000.00, Time=2025-12-10 12:42:50.094]) Tj
+T* (2025-12-10 12:44:58.254 | Transaction[Type=TRANSFER, From=1002, To=1001, Amount=1600.00, Time=2025-12-10 12:44:58.250] | TransactionResult[Success=true, Type=TRANSFER, AccountId=1002, Balance=2000.00, Message=Transfer successful: $1600.00 from Account 1002 to Account 1001, Time=2025-12-10 12:44:58.254]) Tj
+T* (2025-12-10 12:55:34.364 | Transaction[Type=WITHDRAW, Account=1003, Amount=6000.00, Time=2025-12-10 12:55:34.352] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1003, Balance=1500.00, Message=Withdrawal successful: $6000.00, Time=2025-12-10 12:55:34.364]) Tj
+T* (================================================================================) Tj
+T* (TRANSACTION LOG - Started at 2025-12-10 13:12:14.033) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 13:12:44.494 | Transaction[Type=DEPOSIT, Account=1001, Amount=100.00, Time=2025-12-10 13:12:44.489] | TransactionResult[Success=true, Type=DEPOSIT, AccountId=1001, Balance=5100.00, Message=Deposit successful: $100.00, Time=2025-12-10 13:12:44.494]) Tj
+T* (2025-12-10 13:12:44.495 | Transaction[Type=DEPOSIT, Account=1001, Amount=60.00, Time=2025-12-10 13:12:44.494] | TransactionResult[Success=true, Type=DEPOSIT, AccountId=1001, Balance=5160.00, Message=Deposit successful: $60.00, Time=2025-12-10 13:12:44.495]) Tj
+T* (2025-12-10 13:12:44.499 | Transaction[Type=BALANCE_INQUIRY, Account=1001, Amount=0.00, Time=2025-12-10 13:12:44.493] | TransactionResult[Success=true, Type=BALANCE_INQUIRY, AccountId=1001, Balance=5160.00, Message=Balance inquiry: $5160.00, Time=2025-12-10 13:12:44.499]) Tj
+T* (2025-12-10 13:12:44.500 | Transaction[Type=WITHDRAW, Account=1001, Amount=80.00, Time=2025-12-10 13:12:44.492] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=5080.00, Message=Withdrawal successful: $80.00, Time=2025-12-10 13:12:44.500]) Tj
+T* (2025-12-10 13:12:44.501 | Transaction[Type=WITHDRAW, Account=1001, Amount=40.00, Time=2025-12-10 13:12:44.495] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=5040.00, Message=Withdrawal successful: $40.00, Time=2025-12-10 13:12:44.501]) Tj
+T* (2025-12-10 13:12:47.818 | Transaction[Type=WITHDRAW, Account=1001, Amount=50.00, Time=2025-12-10 13:12:47.817] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4990.00, Message=Withdrawal successful: $50.00, Time=2025-12-10 13:12:47.818]) Tj
+T* (2025-12-10 13:12:47.988 | Transaction[Type=WITHDRAW, Account=1001, Amount=50.00, Time=2025-12-10 13:12:47.987] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4940.00, Message=Withdrawal successful: $50.00, Time=2025-12-10 13:12:47.988]) Tj
+T* (2025-12-10 13:12:48.144 | Transaction[Type=WITHDRAW, Account=1001, Amount=50.00, Time=2025-12-10 13:12:48.143] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4890.00, Message=Withdrawal successful: $50.00, Time=2025-12-10 13:12:48.144]) Tj
+T* (2025-12-10 13:12:48.301 | Transaction[Type=WITHDRAW, Account=1001, Amount=50.00, Time=2025-12-10 13:12:48.299] | TransactionResult[Success=true, Type=WITHDRAW, AccountId=1001, Balance=4840.00, Message=Withdrawal successful: $50.00, Time=2025-12-10 13:12:48.301]) Tj
+T* (2025-12-10 13:12:48.456 | Transaction[Type=WITHDRAW, Account=1001, Amount=6000.00, Time=2025-12-10 13:12:48.455] | TransactionResult[Success=false, Type=WITHDRAW, AccountId=1001, Balance=4840.00, Message=Withdrawal failed: Insufficient funds or invalid amount, Time=2025-12-10 13:12:48.456]) Tj
+T* () Tj
+T* () Tj
+T* (=== logs/fraud_report.txt ===) Tj
+T* (================================================================================) Tj
+T* (FRAUD DETECTION REPORT - Started at 2025-12-10 11:59:39.273) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (FRAUD DETECTION REPORT - Started at 2025-12-10 12:04:32.093) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (FRAUD DETECTION REPORT - Started at 2025-12-10 12:20:45.715) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (FRAUD DETECTION REPORT - Started at 2025-12-10 12:21:07.990) Tj
+T* (================================================================================) Tj
+T* (================================================================================) Tj
+T* (FRAUD DETECTION REPORT - Started at 2025-12-10 12:38:36.662) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 12:55:34.384 | AccountId: 1003 | Severity: MEDIUM | Reason: High-value withdrawal: $6000.00) Tj
+T* (2025-12-10 12:56:23.885 | AccountId: 1003 | Severity: HIGH | Reason: Rapid withdrawals detected: 3 withdrawals in short time) Tj
+T* (================================================================================) Tj
+T* (FRAUD DETECTION REPORT - Started at 2025-12-10 13:12:14.030) Tj
+T* (================================================================================) Tj
+T* (2025-12-10 13:12:47.819 | AccountId: 1001 | Severity: HIGH | Reason: Rapid withdrawals detected: 3 withdrawals in short time) Tj
+T* (2025-12-10 13:12:48.302 | AccountId: 1001 | Severity: HIGH | Reason: Rapid withdrawals detected: 3 withdrawals in short time) Tj
+T* (2025-12-10 13:12:48.673 | AccountId: 1001 | Severity: HIGH | Reason: Multiple failed PIN attempts \(3\)) Tj
+T* () Tj
+T* () Tj
+T* (=== logs/daily_report.txt ===) Tj
+T* ([Unable to read logs/daily_report.txt : logs\daily_report.txt \(The system cannot find the file specified\)]) Tj
+T* () Tj
+T* () Tj
+T* () Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000018352 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+18422
+%%EOF
